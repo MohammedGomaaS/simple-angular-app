@@ -1,0 +1,34 @@
+.student{
+    position: relative;
+    overflow: auto;
+    width:200px !important;
+    height: 200px !important;
+    margin: auto;
+}
+.student >*{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+}
+.student-data{
+  
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    
+    background-color: rgba(74, 74, 74, 0.24);
+    border-radius: 5px;
+    padding: 10px;
+    
+   
+}
+.student-data label{
+    color: #635c5c;
+}
+.student-data >*{
+    float:left;
+}

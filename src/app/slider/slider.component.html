@@ -1,0 +1,37 @@
+<div class="container">
+
+  
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" *ngFor="let student of students;let i=index" attr.data-slide-to="{{i}}" attr.class="{{i==0?'active':''}}"></li>
+      
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item" *ngFor="let student of students; let i=index"  attr.class="{{i==0?'item active':'item'}}">
+       
+        <div class="student" (click)="viewStudent(student)">
+          <img src="{{student.image}}" alt="New york" style="width:100%;">
+          <div class="student-data">
+            <label>name :{{student.name}}</label>
+            <label>age:{{student.age}}</label>
+            <label>faculty name:{{student.facultyName}}</label>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>

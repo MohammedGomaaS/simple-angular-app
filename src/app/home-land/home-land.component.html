@@ -1,0 +1,4 @@
+<app-slider (fire)="viewStuentControlPanel($event)"></app-slider>
+<app-student-control-panel *ngIf="stuentControlPanelAvailable" [studentDetails]="selectedStudentDetails" (edit)="editStudent($event)"></app-student-control-panel>
+
+<app-add-edit-student [editing]="editing" [student]="selectedStudentDetails" *ngIf="addEditAvailable" (cancel)="hideAddEditStudent()"></app-add-edit-student>

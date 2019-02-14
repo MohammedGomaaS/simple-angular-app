@@ -1,0 +1,19 @@
+<div class="student-panel">
+
+  <div class="details">
+    <div class="img-container">
+      <img src="{{studentDetails.image}}" alt="Student" />
+      <label>{{studentDetails.name}}</label>
+    </div>
+    <div class="data">
+      <label>Faculty Name: {{studentDetails.facultyName}}</label>
+      <label>Phone: {{studentDetails.phone}}</label>
+      <label>Date of Birth: {{studentDetails.dateOfBirth}}</label>
+      <label>Address: {{studentDetails.address}}</label>
+    </div>
+  </div>
+  <div class="controls">
+    <button type="button" class="btn btn-success" style="margin-bottom: 10px" (click)="fireEdit()">Edit</button>
+    <button type="button" class="btn btn-danger" (click)="openDeleteDialog()">Delete</button>
+  </div>
+</div>

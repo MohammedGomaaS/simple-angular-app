@@ -1,0 +1,16 @@
+.form-group{
+    position: relative !important;
+}
+
+.cust-form-control-feedback{
+    position: absolute;
+    top: .5rem;
+    right: 1.5rem;
+    z-index: 2;
+    display: block;   
+    text-align: center;
+    pointer-events: none;
+}
+.cust-form-control-feedback >p{
+    color:red;
+}
